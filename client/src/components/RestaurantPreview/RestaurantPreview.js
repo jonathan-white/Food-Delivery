@@ -21,10 +21,15 @@ const RestaurantContainer = (props) => {
   let isOpen = null;
   (currentTime >= openTime && currentTime <= closeTime) ? isOpen = true : isOpen = false;
 
+  const handleClick = (event) => {
+    event.preventDefault();
+    console.log('User wants to view:',location.title);
+  }
+
   return (
     <div>
       <RestaurantPreview
-        menuImages={location.menu.images}
+        menu={location.menu}
         isOpen={isOpen}
         title={location.title}
         category={location.cuisine.category}
@@ -35,6 +40,7 @@ const RestaurantContainer = (props) => {
         numReviews={numReviews}
         eta={location.delivery.eta}
         delivery={location.delivery.description}
+        viewLocation={handleClick}
       />
       <hr />
     </div>
@@ -43,11 +49,13 @@ const RestaurantContainer = (props) => {
 
 // Presentational Component
 const RestaurantPreview = (props) => (
-  <div className="restaurant-preview">
+  <div className="restaurant-preview" onClick={props.viewLocation}>
     <div className="horizontal-scroll menu-items">
-      {props.menuImages && props.menuImages.map((item, i) => (
-        <MenuItem key={i} source={item} alt="" size="small-image" />
-      ))}
+      {props.menu.show_preview &&
+        props.menu.items.filter(i => i.showcase_order > 0).map((item, index) => (
+          <MenuItem key={index} source={item.img} alt={item.title} size="small-image" />
+        ))
+      }
     </div>
     {!props.isOpen && <div className="restaurant-status">Currently Closed</div>}
     <div className="restaurant-title">{props.title}</div>

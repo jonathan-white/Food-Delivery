@@ -17,8 +17,24 @@ var LocationSchema = new Schema({
   delivery: {
     description: {type: String, default: 'Free delivery'},
     free_over: {type: Number, default: 0.00},
-    charge: {type: Number, default: 0.00}
+    charge: {type: Number, default: 0.00},
+		eta: String
   },
+	menu: {
+		show_preview: {type: Boolean, default: false},
+		categories: [
+			{
+				type: Schema.Types.ObjectId,
+				ref: "Category"
+			}
+		],
+		items: [
+			{
+				type: Schema.Types.ObjectId,
+				ref: "MenuItem"
+			}
+		]
+	},
 	reviews: [
       {
 	      type: Schema.Types.ObjectId,

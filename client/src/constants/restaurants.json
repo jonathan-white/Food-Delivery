@@ -1,7 +1,6 @@
 [
   {
     "title": "Boston Market",
-    "featured": false,
     "logo": "",
     "price_range": "$",
     "hours": {
@@ -19,7 +18,49 @@
       "eta": "40 min"
     },
     "menu": {
-      "images": []
+      "show_preview": false,
+      "items": [
+        {
+          "title": "Rusty Bucket Wings",
+          "img": "https://storage.googleapis.com/food-service-c6def.appspot.com/Rusty-Bucket/chicken-wings.jpg",
+          "price": 12.49,
+          "category": "Rusty Bucket Wings",
+          "popular": true,
+          "showcase_order": 1
+        },
+        {
+          "title": "Buffalo Chicken Sandwich",
+          "img": "https://storage.googleapis.com/food-service-c6def.appspot.com/Rusty-Bucket/chicken-turkey-club.jpg",
+          "price": 11.99,
+          "category": "Sandwiches",
+          "popular": true,
+          "showcase_order": 2
+        },
+        {
+          "title": "Rusty Bucket Burger",
+          "img": "https://storage.googleapis.com/food-service-c6def.appspot.com/Rusty-Bucket/bacon-cheeseburger.jpg",
+          "price": 11.99,
+          "category": "Burgers",
+          "popular": true,
+          "showcase_order": 3
+        },
+        {
+          "title": "BBQ Chopped Chicken Salad",
+          "img": "https://storage.googleapis.com/food-service-c6def.appspot.com/Rusty-Bucket/bbq-chicken-salad.jpeg",
+          "price": 13.49,
+          "category": "Fresh Salads",
+          "popular": true,
+          "showcase_order": 4
+        },
+        {
+          "title": "Blackened Salmon Salad",
+          "img": "https://storage.googleapis.com/food-service-c6def.appspot.com/Rusty-Bucket/Blackened-Salmon-Salad.jpg",
+          "price": 15.99,
+          "category": "Fresh Salads",
+          "popular": true,
+          "showcase_order": 5
+        }
+      ]
     },
     "reviews": [
       {
@@ -46,7 +87,6 @@
   },
   {
     "title": "Burntwood Tavern",
-    "featured": false,
     "logo": "",
     "price_range": "$$",
     "hours": {
@@ -64,7 +104,8 @@
       "eta": "41 min"
     },
     "menu": {
-      "images": []
+      "show_preview": false,
+      "items": []
     },
     "reviews": [
       {
@@ -101,7 +142,6 @@
   },
   {
     "title": "Brewster's",
-    "featured": false,
     "logo": "",
     "price_range": "$$",
     "hours": {
@@ -119,7 +159,8 @@
       "eta": "36 min"
     },
     "menu": {
-      "images": []
+      "show_preview": false,
+      "items": []
     },
     "reviews": []
   },
@@ -143,13 +184,79 @@
       "eta": "47 min"
     },
     "menu": {
-      "images": [
-        "assets/images/Rusty-Bucket/chicken-wings.jpg",
-        "assets/images/Rusty-Bucket/chicken-turkey-club.jpg",
-        "assets/images/Rusty-Bucket/bacon-cheeseburger.jpg",
-        "assets/images/Rusty-Bucket/chicken-wings.jpg",
-        "assets/images/Rusty-Bucket/chicken-turkey-club.jpg",
-        "assets/images/Rusty-Bucket/bacon-cheeseburger.jpg"
+      "show_preview": true,
+      "categories": [
+        {
+          "title": "Starters",
+          "note": "Great for sharing with smiles!"
+        },
+        {
+          "title": "Soups",
+          "note": ""
+        },
+        {
+          "title": "Fresh Salads",
+          "note": "Hand crafted."
+        },
+        {
+          "title": "Rusty Bucket Wings",
+          "note": "All served with crisp celery sticks and blue cheese dressing."
+        },
+        {
+          "title": "Sandwiches",
+          "note": "Served with crispy, seasoned fries or substitute sweet potato fries or onion rings for $1.39."
+        }
+      ],
+      "items": [
+        {
+          "title": "Rusty Bucket Wings",
+          "img": "https://storage.googleapis.com/food-service-c6def.appspot.com/Rusty-Bucket/chicken-wings.jpg",
+          "price": 12.49,
+          "category": "Rusty Bucket Wings",
+          "popular": true,
+          "showcase_order": 1
+        },
+        {
+          "title": "Buffalo Chicken Sandwich",
+          "img": "https://storage.googleapis.com/food-service-c6def.appspot.com/Rusty-Bucket/chicken-turkey-club.jpg",
+          "price": 11.99,
+          "category": "Sandwiches",
+          "popular": true,
+          "showcase_order": 2
+        },
+        {
+          "title": "Rusty Bucket Burger",
+          "img": "https://storage.googleapis.com/food-service-c6def.appspot.com/Rusty-Bucket/bacon-cheeseburger.jpg",
+          "price": 11.99,
+          "category": "Burgers",
+          "popular": true,
+          "showcase_order": 3
+        },
+        {
+          "title": "BBQ Chopped Chicken Salad",
+          "img": "https://storage.googleapis.com/food-service-c6def.appspot.com/Rusty-Bucket/bbq-chicken-salad.jpeg",
+          "price": 13.49,
+          "category": "Fresh Salads",
+          "popular": true,
+          "showcase_order": 4
+        },
+        {
+          "title": "Blackened Salmon Salad",
+          "img": "https://storage.googleapis.com/food-service-c6def.appspot.com/Rusty-Bucket/Blackened-Salmon-Salad.jpg",
+          "price": 15.99,
+          "category": "Fresh Salads",
+          "popular": true,
+          "showcase_order": 5
+        },
+        {
+          "title": "Veggie",
+          "description": "Roasted tomatoes, mozzerella, provolone, mushrooms, bell peppers, red onion, banana peppers, green olives and spinach.",
+          "img": "https://storage.googleapis.com/food-service-c6def.appspot.com/Rusty-Bucket/Blackened-Salmon-Salad.jpg",
+          "price": 12.79,
+          "category": "'G' Knows Pizza",
+          "popular": true,
+          "showcase_order": 0
+        }
       ]
     },
     "reviews": [
