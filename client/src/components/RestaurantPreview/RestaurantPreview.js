@@ -1,11 +1,12 @@
 import React from 'react';
+import { withRouter } from  'react-router-dom';
 import './RestaurantPreview.css';
 import MenuItem from '../MenuItem';
 import moment from "moment";
 
 // Container Component
 const RestaurantContainer = (props) => {
-  const location = props.location;
+  const location = props.establishment;
 
   // Calculate the average rating
   const numReviews = location.reviews.length;
@@ -86,4 +87,4 @@ const RestaurantPreview = (props) => (
   </div>
 );
 
-export default RestaurantContainer;
+export default withRouter(RestaurantContainer);

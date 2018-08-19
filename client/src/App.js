@@ -7,6 +7,7 @@ import DrinksPage from './components/_pages/DrinksPage/';
 import OrdersPage from './components/_pages/OrdersPage/';
 import LandingPage from './components/_pages/LandingPage/';
 import LoginPage from './components/_pages/LoginPage';
+import Location from './components/_pages/Location';
 
 class App extends Component {
   render() {
@@ -18,6 +19,9 @@ class App extends Component {
           <Route exact path={routes.DRINKS} component={() => <DrinksPage />} />
           <Route exact path={routes.ORDERS} component={() => <OrdersPage />} />
           <Route exact path={routes.LOGIN} component={() => <LoginPage />} />
+          <Route exact path={routes.LOCATION} component={(props) =>
+            <Location locationId={props.match.params.id} />} 
+          />
         </Switch>
       </Router>
     );

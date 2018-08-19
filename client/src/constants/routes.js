@@ -4,3 +4,4 @@ export const DRINKS = '/drinks';
 export const ORDERS = '/orders';
 export const LOGIN = '/login';
 export const SIGNUP = '/signup';
+export const LOCATION = '/locations/:id';

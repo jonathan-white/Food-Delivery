@@ -8,7 +8,7 @@ const Restaurants = () => (
     <h1 className="section-title">All Restaurants</h1>
     <hr className="section-hr" />
     {
-      restaurants.map(r => <RestaurantPreview key={r.title} location={r} />)
+      restaurants.map(r => <RestaurantPreview key={r.title} establishment={r} />)
     }
   </div>
 );
