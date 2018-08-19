@@ -39,7 +39,7 @@ const login = (state = {}, action) => {
     default:
       return state;
   }
-}
+};
 
 const display = (state = {
   showNewCustomerPromo: true,
@@ -65,11 +65,29 @@ const display = (state = {
     default:
       return state;
   }
+};
+
+const locations = (state = [], action) => {
+  switch (action.type) {
+    case 'GET_LOCATIONS':
+      return {
+        ...state,
+        list: action.list
+      }
+    case 'FOUND_LOCATIONS':
+      return {
+        ...state,
+        hasList: true
+      }
+    default:
+      return state;
+  }
 }
 
 const FoodApp = combineReducers({
   login,
-  display
+  display,
+  locations
 });
 
 ReactDOM.render(

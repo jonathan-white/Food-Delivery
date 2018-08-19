@@ -1,6 +1,7 @@
 [
   {
     "title": "Boston Market",
+    "display_order": 1,
     "logo": "",
     "price_range": "$",
     "hours": {
@@ -139,6 +140,7 @@
   },
   {
     "title": "Burntwood Tavern",
+    "display_order": 4,
     "logo": "",
     "price_range": "$$",
     "hours": {
@@ -195,6 +197,7 @@
   },
   {
     "title": "Brewster's",
+    "display_order": 2,
     "logo": "",
     "price_range": "$$",
     "hours": {
@@ -220,6 +223,7 @@
   },
   {
     "title": "Rusty Bucket Restaurant and Tavern",
+    "display_order": 3,
     "featured": true,
     "logo": "",
     "price_range": "$$",

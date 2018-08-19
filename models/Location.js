@@ -4,6 +4,7 @@ var Schema = mongoose.Schema;
 
 var LocationSchema = new Schema({
 	title: {type: String, required: true},
+	display_order: Number,
   logo: String,
   price_range: {type: String, default: '$'},
   hours: {

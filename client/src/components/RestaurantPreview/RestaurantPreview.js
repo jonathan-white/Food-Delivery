@@ -2,6 +2,7 @@ import React from 'react';
 import { withRouter } from  'react-router-dom';
 import './RestaurantPreview.css';
 import MenuItem from '../MenuItem';
+import * as routes from '../../constants/routes';
 import moment from "moment";
 
 // Container Component
@@ -25,6 +26,7 @@ const RestaurantContainer = (props) => {
   const handleClick = (event) => {
     event.preventDefault();
     console.log('User wants to view:',location.title);
+    props.history.push(`/locations/${location._id}`);
   }
 
   return (

@@ -4,18 +4,29 @@ module.exports = {
   findAll: function(req, res) {
     db.Location
       .find(req.query)
-      .populate('categories')
-      .populate('items')
+      .populate('menu.categories')
+      .populate('menu.items')
       .populate('reviews')
-      .sort({ dateAdded: -1 })
+      .sort({ display_order: 1 })
       .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
+  findAllShowIDsOnly: function(req, res) {
+    db.Location
+      .find(req.query)
+      .sort({ dateAdded: -1 })
+      .then(dbModel => res.json(dbModel.map(l => ({
+          _id: l._id,
+          title: l.title
+        })
+      )))
       .catch(err => res.status(422).json(err));
   },
   findById: function(req, res) {
     db.Location
       .find({_id: req.params.id})
-      .populate('categories')
-      .populate('items')
+      .populate('menu.categories')
+      .populate('menu.items')
       .populate('reviews')
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));

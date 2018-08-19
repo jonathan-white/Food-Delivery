@@ -7,6 +7,7 @@ import RegionalFavorites from '../RegionalFavorites/';
 import TryMe from '../TryMe/';
 import Restaurants from '../Restaurants/';
 import './HeroCard.css';
+import API from '../../utils/API';
 
 class HeroCard extends Component {
   componentDidMount() {
@@ -23,6 +24,23 @@ class HeroCard extends Component {
   render() {
     const { store } = this.context;
     const state = store.getState();
+
+    if(!state.locations.hasList){
+      const getLocations = () => {
+        API.getLocations()
+        .then(res => {
+          store.dispatch({
+            type: 'FOUND_LOCATIONS'
+          });
+          store.dispatch({
+            type: 'GET_LOCATIONS',
+            list: res.data
+          });
+        })
+        .catch(err => this.setState({error: err}));
+      }
+      getLocations();
+    }
 
     return (
       <div className="hero">

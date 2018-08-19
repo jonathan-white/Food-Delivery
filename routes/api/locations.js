@@ -6,6 +6,10 @@ router.route("/")
   .get(locationsController.findAll)
   .post(locationsController.create);
 
+// Matches with "/api/locations/ids"
+router.route("/ids")
+  .get(locationsController.findAllShowIDsOnly);
+
 // Matches with "/api/locations/:id"
 router.route("/:id")
   .get(locationsController.findById)
