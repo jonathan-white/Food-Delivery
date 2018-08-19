@@ -1,0 +1,18 @@
+.cuisine-scroll {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 576px) {
+  ::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+
+  ::-webkit-scrollbar-button {
+    width: 2px;
+    height: 2px;
+  }
+}

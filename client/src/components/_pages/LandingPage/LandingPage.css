@@ -1,0 +1,180 @@
+/* Top Section */
+.top-section {
+  position: relative;
+  background-color: #ddd;
+}
+
+.slider {
+  width: 100%;
+  height: 60vh;
+}
+
+.slide-image {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-image.active {
+  display: block;
+}
+
+.slide-image.image-1 {
+  background-image: url('../../../images/Vegetarian-Pad-Tha-2-2.jpg');
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: 0 50%;
+  animation: slide_1 5s linear infinite;
+}
+
+@keyframes slide_1 {
+  0% { background-position: 0 50%; }
+  100% { background-position: -90px 50%; }
+}
+
+.slide-image.image-2 {
+  background-image: url('../../../images/all-american-cheeseburger.jpg');
+  background-repeat: no-repeat;
+  background-size: 150% 100%;
+  background-position: 0 60%;
+  animation: slide_2 5s linear infinite;
+}
+
+@keyframes slide_2 {
+  0% { background-position: 0 50%; }
+  100% { background-position: -90px 50%; }
+}
+
+.slide-image.image-3 {
+  background-image: url('../../../images/Cranberry-Avocado-Salad.jpg');
+  background-repeat: no-repeat;
+  background-size: 150% 100%;
+  background-position: 0 50%;
+  animation: slide_3 5s linear infinite;
+}
+
+@keyframes slide_3 {
+  0% { background-position: 0 50%; }
+  100% { background-position: -90px 50%; }
+}
+
+/* Bottom Section */
+.bottom-section {
+  background-color: #fff;
+}
+
+.btn-signin-google {
+  position: relative;
+  width: 90%;
+  background-color: blue;
+  padding: 10px 30px;
+  text-align: center;
+  color: #fff;
+  margin: 10px auto;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.google-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translate(0,-50%);
+}
+
+.google-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 70%;
+  transform: translate(-50%,-50%);
+  background-image: url('../../../images/google.svg');
+}
+
+.facebook-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  background-image: url('../../../images/facebook.svg');
+  transform: translate(0,-50%);
+}
+
+.facebook-icon path {
+  fill: #fff;
+}
+
+.btn-signin-facebook {
+  position: relative;
+  width: 90%;
+  background-color: rgb(21, 38, 126);
+  padding: 10px 30px;
+  text-align: center;
+  color: #fff;
+  margin: 10px auto;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.login-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.login-container a {
+  color: #000;
+}
+
+.login-wrapper {
+  width: 50%;
+  padding: 5px;
+}
+
+.login-wrapper:first-of-type {
+  border-right: 2px solid #ddd;
+}
+
+.btn-manual-login {
+  padding: 5px 15%;
+  cursor: pointer;
+  border-radius: 2px;
+  font-weight: 600;
+  transition: background-color 300ms ease;
+  text-align: center;
+}
+
+.btn-manual-login:active {
+  background-color: rgba(255,0,0,.8);
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: 10px;
+  width: 90%;
+  margin: 10px auto 10px;
+}
+
+.disclaimer a {
+  text-decoration: underline;
+  color: blue;
+}
+
+@media screen and (min-width: 577px) {
+  .slide-image.image-1 {
+    background-size: 120%;
+  }
+  .slide-image.image-2 {
+    background-size: 150%;
+  }
+  .slide-image.image-3 {
+    background-size: 120%;
+  }
+}

@@ -1,0 +1,188 @@
+[
+  {
+    "title": "Boston Market",
+    "featured": false,
+    "logo": "",
+    "price_range": "$",
+    "hours": {
+      "doors_open": "10:30",
+      "doors_close": "21:00"
+    },
+    "cuisine": {
+      "category": "American",
+      "subcategory": "Traditional"
+    },
+    "delivery": {
+      "description": "Free delivery over $15",
+      "free_over":  15.00,
+      "charge": 5.00,
+      "eta": "40 min"
+    },
+    "menu": {
+      "images": []
+    },
+    "reviews": [
+      {
+        "customerID": 1,
+        "rating": 5,
+        "review": "Very nice establishment!"
+      },
+      {
+        "customerID": 2,
+        "rating": 4,
+        "review": "The rice was a little overcooked but everything else was great."
+      },
+      {
+        "customerID": 3,
+        "rating": 5,
+        "review": ""
+      },
+      {
+        "customerID": 4,
+        "rating": 5,
+        "review": ""
+      }
+    ]
+  },
+  {
+    "title": "Burntwood Tavern",
+    "featured": false,
+    "logo": "",
+    "price_range": "$$",
+    "hours": {
+      "doors_open": "11:00",
+      "doors_close": "21:00"
+    },
+    "cuisine": {
+      "category": "American",
+      "subcategory": "New"
+    },
+    "delivery": {
+      "description": "Free delivery",
+      "free_over":  0,
+      "charge": 0,
+      "eta": "41 min"
+    },
+    "menu": {
+      "images": []
+    },
+    "reviews": [
+      {
+        "customerID": 1,
+        "rating": 5,
+        "review": "Very nice establishment!"
+      },
+      {
+        "customerID": 2,
+        "rating": 4,
+        "review": "The rice was a little overcooked but everything else was great."
+      },
+      {
+        "customerID": 3,
+        "rating": 5,
+        "review": ""
+      },
+      {
+        "customerID": 4,
+        "rating": 5,
+        "review": ""
+      },
+      {
+        "customerID": 5,
+        "rating": 3,
+        "review": "It's just ok."
+      },
+      {
+        "customerID": 6,
+        "rating": 5,
+        "review": "I love this place!"
+      }
+    ]
+  },
+  {
+    "title": "Brewster's",
+    "featured": false,
+    "logo": "",
+    "price_range": "$$",
+    "hours": {
+      "doors_open": "11:00",
+      "doors_close": "21:00"
+    },
+    "cuisine": {
+      "category": "American",
+      "subcategory": "New"
+    },
+    "delivery": {
+      "description": "Free delivery",
+      "free_over":  0,
+      "charge": 0,
+      "eta": "36 min"
+    },
+    "menu": {
+      "images": []
+    },
+    "reviews": []
+  },
+  {
+    "title": "Rusty Bucket Restaurant and Tavern",
+    "featured": true,
+    "logo": "",
+    "price_range": "$$",
+    "hours": {
+      "doors_open": "11:00",
+      "doors_close": "21:00"
+    },
+    "cuisine": {
+      "category": "American",
+      "subcategory": "Traditional"
+    },
+    "delivery": {
+      "description": "Free delivery",
+      "free_over":  0,
+      "charge": 0,
+      "eta": "47 min"
+    },
+    "menu": {
+      "images": [
+        "assets/images/Rusty-Bucket/chicken-wings.jpg",
+        "assets/images/Rusty-Bucket/chicken-turkey-club.jpg",
+        "assets/images/Rusty-Bucket/bacon-cheeseburger.jpg",
+        "assets/images/Rusty-Bucket/chicken-wings.jpg",
+        "assets/images/Rusty-Bucket/chicken-turkey-club.jpg",
+        "assets/images/Rusty-Bucket/bacon-cheeseburger.jpg"
+      ]
+    },
+    "reviews": [
+      {
+        "customerID": 1,
+        "rating": 5,
+        "review": "Very nice establishment!"
+      },
+      {
+        "customerID": 2,
+        "rating": 4,
+        "review": "The rice was a little overcooked but everything else was great."
+      },
+      {
+        "customerID": 3,
+        "rating": 4,
+        "review": ""
+      },
+      {
+        "customerID": 4,
+        "rating": 5,
+        "review": ""
+      },
+      {
+        "customerID": 5,
+        "rating": 5,
+        "review": "It's just ok."
+      },
+      {
+        "customerID": 6,
+        "rating": 5,
+        "review": "I love this place!"
+      }
+    ]
+  }
+]

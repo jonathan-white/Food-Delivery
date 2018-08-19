@@ -1,0 +1,19 @@
+.promo-image {
+  max-width: 400px;
+  height: 200px;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,.4);
+  box-shadow: 2px 2px 5px rgba(0,0,0,.4);
+  border-radius: 5px;
+  background-color: rgba(105, 242, 201,.5);
+  position: relative;
+}
+
+.newcustomer img{
+  transform: rotate(-90deg);
+  position: absolute;
+  z-index: -1;
+  height: 150%;
+  right: 50px;
+  top: -50px;
+}

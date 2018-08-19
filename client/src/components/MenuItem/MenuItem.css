@@ -1,0 +1,26 @@
+.menu-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.menu-item img {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.large-image {
+  max-width: 400px;
+  height: 175px;
+}
+.large-image img {
+  width: 400px;
+}
+
+.small-image {
+  max-width: 180px;
+  height: 100px;
+}
+
+.small-image img {
+  width: 150px;
+}

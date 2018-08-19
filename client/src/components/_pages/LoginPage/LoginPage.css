@@ -1,0 +1,145 @@
+.page-container {
+  padding: 10px 20px;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 1st Row */
+.logo-password-reset {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.logo-holder {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.logo-holder .logo-icon {
+  color: red;
+}
+
+/* 2nd Row */
+.page-title {
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* 3rd Row */
+.form-container {
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.inputfield {
+  position: relative;
+}
+
+.inputfield input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid #888;
+  outline: none;
+}
+
+.inputfield .indicators {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.inputfield input.valid {
+  border-bottom: 2px solid rgba(0, 170, 37, 0.92);
+}
+
+.indicators .fa-check-circle {
+  color: rgba(0, 170, 37, 0.92);
+  margin-left: 10px;
+}
+
+.indicators .fa-check-circle.hide {
+  display: none;
+}
+
+.inputfield .fa-eye {
+  position: relative;
+  top: 1px;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.fas.fa-eye {
+  color: #888;
+}
+
+.far.fa-eye {
+  color: #000;
+}
+
+/* Change the text input caret color */
+input,
+textarea {
+    color: red;
+    caret-color: red;
+    text-shadow: 0px 0px 0px #000;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Change the text input placeholder color */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #888;
+    text-shadow: none;
+    -webkit-text-fill-color: initial;
+}
+
+.status-and-continue {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.hide-error-message {
+  display: none;
+}
+
+.display-error-message {
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgba(0,0,0,.8);
+  color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fade-out 1s 2s ease-out forwards;
+}
+
+@keyframes fade-out {
+  0% { opacity: 1 }
+  100% { opacity: 0 }
+}
+
+.btn-continue {
+  width: 100%;
+  background-color: red;
+  color: #fff;
+  border-radius: 2px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-continue:disabled {
+  background-color: rgba(255,0,0,.5);
+}

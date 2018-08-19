@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.section-hr {
+  margin: 0 0 15px;
+  width: 20px;
+  border: 2px solid rgba(255,0,0,.91);
+}
+
+a {
+  color: red;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.dot {
+  width: 2px;
+  height: 2px;
+  background-color: #666;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+
+.restaurant-title {
+  font-weight: 800;
+}
+
+.restaurant-details {
+  color: #666;
+  font-size: .95rem;
+}
+
+.horizontal-scroll {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 576px) {
+  ::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+
+  ::-webkit-scrollbar-button {
+    width: 2px;
+    height: 2px;
+  }
+}

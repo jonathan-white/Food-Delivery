@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Pizza",
+    "image": "assets/images/pizza.svg"
+  },
+  {
+    "title": "Italian",
+    "image": "assets/images/spaghetti.svg"
+  },
+  {
+    "title": "Mexican",
+    "image": "assets/images/taco.svg"
+  },
+  {
+    "title": "Salad",
+    "image": "assets/images/salad.svg"
+  },
+  {
+    "title": "American",
+    "image": "assets/images/cheese-burger.svg"
+  },
+  {
+    "title": "Sushi",
+    "image": "assets/images/sushi.svg"
+  },
+  {
+    "title": "Barbecue",
+    "image": "assets/images/steak.svg"
+  },
+  {
+    "title": "Chinese",
+    "image": "assets/images/chinese.svg"
+  },
+  {
+    "title": "Thai",
+    "image": "assets/images/pad-thai.svg"
+  },
+  {
+    "title": "Japanese",
+    "image": "assets/images/rice.svg"
+  },
+  {
+    "title": "Mediterranean",
+    "image": "assets/images/vinegar.svg"
+  },
+  {
+    "title": "Indian",
+    "image": "assets/images/curry.svg"
+  },
+  {
+    "title": "Desserts",
+    "image": "assets/images/donut.svg"
+  },
+  {
+    "title": "Vegetarian",
+    "image": "assets/images/salad.svg"
+  }
+]

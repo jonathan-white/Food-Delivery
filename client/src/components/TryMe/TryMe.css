@@ -1,0 +1,14 @@
+.try-me {
+  padding: 0 15px;
+}
+
+.section-separator {
+  position: relative;
+  left: -20%;
+  width: 150%;
+  height: 10px;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  background-color: #ccc;
+  margin: 10px 0;
+}

@@ -1,0 +1,14 @@
+.header-row {
+  background-color: rgb(255, 0, 0);
+  padding: 10px 20px;
+  color: #fff;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.fa-search,
+.fa-bars {
+  cursor: pointer;
+}
