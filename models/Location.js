@@ -25,7 +25,7 @@ var LocationSchema = new Schema({
 		categories: [
 			{
 				type: Schema.Types.ObjectId,
-				ref: "Category"
+				ref: "MenuCategory"
 			}
 		],
 		items: [

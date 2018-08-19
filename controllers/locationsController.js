@@ -4,6 +4,8 @@ module.exports = {
   findAll: function(req, res) {
     db.Location
       .find(req.query)
+      .populate('categories')
+      .populate('items')
       .populate('reviews')
       .sort({ dateAdded: -1 })
       .then(dbModel => res.json(dbModel))
@@ -12,6 +14,8 @@ module.exports = {
   findById: function(req, res) {
     db.Location
       .find({_id: req.params.id})
+      .populate('categories')
+      .populate('items')
       .populate('reviews')
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
