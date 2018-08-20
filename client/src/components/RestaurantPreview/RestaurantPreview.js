@@ -2,7 +2,6 @@ import React from 'react';
 import { withRouter } from  'react-router-dom';
 import './RestaurantPreview.css';
 import MenuItem from '../MenuItem';
-import * as routes from '../../constants/routes';
 import moment from "moment";
 
 // Container Component
@@ -30,23 +29,20 @@ const RestaurantContainer = (props) => {
   }
 
   return (
-    <div>
-      <RestaurantPreview
-        menu={location.menu}
-        isOpen={isOpen}
-        title={location.title}
-        category={location.cuisine.category}
-        subcategory={location.cuisine.subcategory}
-        price_range={location.price_range}
-        openTime={openTime}
-        avgRating={avgRating}
-        numReviews={numReviews}
-        eta={location.delivery.eta}
-        delivery={location.delivery.description}
-        viewLocation={handleClick}
-      />
-      <hr />
-    </div>
+    <RestaurantPreview
+      menu={location.menu}
+      isOpen={isOpen}
+      title={location.title}
+      category={location.cuisine.category}
+      subcategory={location.cuisine.subcategory}
+      price_range={location.price_range}
+      openTime={openTime}
+      avgRating={avgRating}
+      numReviews={numReviews}
+      eta={location.delivery.eta}
+      delivery={location.delivery.description}
+      viewLocation={handleClick}
+    />
   )
 };
 
@@ -65,7 +61,7 @@ const RestaurantPreview = (props) => (
     <div className="cuisine-hours restaurant-details">
       <div className="cuisine">{props.category} ({props.subcategory}) <span className="dot"></span> {props.price_range}</div>
       {props.isOpen
-        ? <div>{props.eta}</div>
+        ? <div>{props.eta} min</div>
         : <div className="hours">Opens at {props.openTime} {`${(props.openTime > '11:59') ? 'PM' : 'AM'}`}</div>
       }
     </div>

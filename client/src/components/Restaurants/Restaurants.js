@@ -19,7 +19,6 @@ class Restaurants extends Component {
   render() {
     const { store } = this.context;
     const state = store.getState();
-
     const restaurants = state.locations.list;
 
     return (

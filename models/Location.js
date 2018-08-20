@@ -19,7 +19,8 @@ var LocationSchema = new Schema({
     description: {type: String, default: 'Free delivery'},
     free_over: {type: Number, default: 0.00},
     charge: {type: Number, default: 0.00},
-		eta: String
+		eta: Number,
+		distance: Number
   },
 	menu: {
 		show_preview: {type: Boolean, default: false},

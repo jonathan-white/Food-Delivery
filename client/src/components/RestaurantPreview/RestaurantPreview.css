@@ -1,6 +1,11 @@
 .restaurant-preview {
-  margin: 20px 0 40px;
+  padding: 15px;
   cursor: pointer;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.restaurant-preview:hover {
+  background-color: #eee;
 }
 
 .restaurant-preview .restaurant-status {

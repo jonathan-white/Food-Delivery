@@ -13,6 +13,7 @@ Food delivery mobile app. Order food from local vendors.
   * Deployed the site: https://pacific-crag-77980.herokuapp.com/
   * Added redux for state management
   * Added firebase authentication via email
+  * Added Location pages
 * **08/18/18 Notes:**
   * Updates to Landing page
   * Updates to Login page

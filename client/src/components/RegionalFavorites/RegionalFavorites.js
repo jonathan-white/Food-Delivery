@@ -1,23 +1,58 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { withRouter } from  'react-router-dom';
 import MenuItem from '../MenuItem';
 import './RegionalFavorites.css';
 
 const IMAGES = `https://storage.googleapis.com/${process.env.REACT_APP_FIREBASE_STORAGE}`;
 
-const handleClick = (event) => {
-  event.preventDefault();
-  console.log('User wants to view:','Rusty Bucket Restaurant and Tavern');
-}
+class RegionalFavoritesContainer extends Component {
+  componentDidMount() {
+    const { store } = this.context;
+    this.unsubscribe = store.subscribe(() =>
+      this.forceUpdate()
+    );
+  };
 
-const RegionalFavorites = () => (
-  <div className="regional-favorites" onClick={handleClick}>
+  componentWillUnmount() {
+    this.unsubscribe();
+  };
+
+  render() {
+    const { store } = this.context;
+    const state = store.getState();
+    const locations = state.locations.list;
+    const selectedLoc = '5b79b8aa56f392324045960e';
+    const location = locations ? locations.filter(r => r._id === selectedLoc)[0] : null;
+
+    const handleClick = (event) => {
+      event.preventDefault();
+      console.log('User wants to view:', location.title);
+      this.props.history.push(`/locations/${selectedLoc}`);
+    }
+
+    return (
+      <RegionalFavorites
+        title={location && location.title}
+        eta={location && location.delivery.eta}
+        delivery={location && location.delivery.description}
+        handleClick={handleClick}
+      />
+    )
+  }
+};
+RegionalFavoritesContainer.contextTypes = {
+  store: PropTypes.object
+};
+
+const RegionalFavorites = (props) => (
+  <div className="regional-favorites" onClick={props.handleClick}>
     <h1 className="section-title">Cleveland Favorites</h1>
     <hr className="section-hr" />
     <MenuItem source={`${IMAGES}/Rusty-Bucket/chicken-wings.jpg`} alt="" size="large-image" />
-    <div className="restaurant-title">Rusty Bucket Restaurant and Tavern</div>
-    <div className="restaurant-details">49 min <span className="dot"></span> Free delivery</div>
+    <div className="restaurant-title">{props.title}</div>
+    <div className="restaurant-details">{props.eta} min <span className="dot"></span> {props.delivery}</div>
   </div>
 );
 
-export default withRouter(RegionalFavorites);
+export default withRouter(RegionalFavoritesContainer);
