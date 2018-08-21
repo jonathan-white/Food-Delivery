@@ -16,7 +16,7 @@
       "description": "Free delivery over $15",
       "free_over":  15.00,
       "charge": 5.00,
-      "eta": "40 min"
+      "eta": 40
     },
     "menu": {
       "show_preview": true,
@@ -155,7 +155,7 @@
       "description": "Free delivery",
       "free_over":  0,
       "charge": 0,
-      "eta": "41 min"
+      "eta": 41
     },
     "menu": {
       "show_preview": false,
@@ -212,7 +212,7 @@
       "description": "Free delivery",
       "free_over":  0,
       "charge": 0,
-      "eta": "36 min"
+      "eta": 36
     },
     "menu": {
       "show_preview": false,
@@ -239,7 +239,7 @@
       "description": "Free delivery",
       "free_over":  0,
       "charge": 0,
-      "eta": "47 min"
+      "eta": 47
     },
     "menu": {
       "show_preview": true,

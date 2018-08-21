@@ -22,8 +22,8 @@ class TryMeConatiner extends Component {
     const { store } = this.context;
     const state = store.getState();
     const locations = state.locations.list;
-    const selectedLoc = '5b79aa0b2e9f7a251c2c6be3';
-    const location = locations ? locations.filter(r => r._id === selectedLoc)[0] : null;
+    const selectedLoc = 'Boston Market';
+    const location = locations ? locations.filter(r => r.title === selectedLoc)[0] : null;
 
     const handleClick = (event) => {
       event.preventDefault();

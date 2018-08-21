@@ -22,8 +22,8 @@ class RegionalFavoritesContainer extends Component {
     const { store } = this.context;
     const state = store.getState();
     const locations = state.locations.list;
-    const selectedLoc = '5b79b8aa56f392324045960e';
-    const location = locations ? locations.filter(r => r._id === selectedLoc)[0] : null;
+    const selectedLoc = 'Rusty Bucket Restaurant and Tavern';
+    const location = locations ? locations.filter(r => r.title === selectedLoc)[0] : null;
 
     const handleClick = (event) => {
       event.preventDefault();
