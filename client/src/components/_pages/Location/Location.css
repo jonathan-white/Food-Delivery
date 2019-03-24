@@ -6,10 +6,6 @@
   margin: 10px 0;
 }
 
-.location-info .menu-item {
-  margin-right: 10px;
-}
-
 .location-info .delivery-info {
   display: flex;
   flex-flow: row nowrap;
@@ -30,6 +26,11 @@
 .item-container {
   cursor: pointer;
   margin-bottom: 20px;
+  padding: 10px;
+}
+
+.item-container:hover {
+  background-color: #eee;
 }
 
 .item-title {
@@ -59,6 +60,22 @@
 }
 
 .category-title {
+  font-size: .875rem;
+}
+
+.pickup-promo {
+  height: 100px;
+  background-color: rgba(31, 190, 212, 0.3);
+  text-align: center;
+  padding: 15px;
+}
+
+.pickup-promo-title {
+  font-weight: 600;
+}
+
+.pickup-promo-sub {
+  color: #666;
   font-size: .875rem;
 }
 

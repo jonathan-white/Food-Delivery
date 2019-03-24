@@ -8,7 +8,7 @@ import OrdersPage from './components/_pages/OrdersPage/';
 import LandingPage from './components/_pages/LandingPage/';
 import LoginPage from './components/_pages/LoginPage';
 import Location from './components/_pages/Location';
-import Category from './components/_pages/Category';
+import MenuCategoryPage from './components/_pages/MenuCategoryPage';
 import MenuItemPage from './components/_pages/MenuItemPage';
 
 class App extends Component {
@@ -25,10 +25,10 @@ class App extends Component {
             <Location locationId={props.match.params.id} />}
           />
           <Route exact path={routes.MENU_CATEGORY} component={(props) =>
-            <Category categoryId={props.match.params.id} />}
+            <MenuCategoryPage menuCategoryId={props.match.params.id} />}
           />
           <Route exact path={routes.MENU_ITEM} component={(props) =>
-            <MenuItemPage menuItemId={props.match.params.id} />} 
+            <MenuItemPage menuItemId={props.match.params.id} />}
           />
         </Switch>
       </Router>

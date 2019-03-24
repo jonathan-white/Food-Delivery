@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { withRouter } from  'react-router-dom';
 import Header from '../../Header/';
 import Footer from '../../Footer/';
 import MenuItem from '../../MenuItem';
 import API from '../../../utils/API';
-import './Category.css';
+import './MenuCategoryPage.css';
 
-class Location extends Component {
+class MenuCategory extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -34,4 +35,4 @@ class Location extends Component {
   }
 }
 
-export default Location;
+export default withRouter(MenuCategory);

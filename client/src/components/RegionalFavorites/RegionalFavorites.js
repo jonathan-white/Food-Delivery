@@ -27,8 +27,7 @@ class RegionalFavoritesContainer extends Component {
 
     const handleClick = (event) => {
       event.preventDefault();
-      console.log('User wants to view:', location.title);
-      this.props.history.push(`/locations/${selectedLoc}`);
+      this.props.history.push(`/locations/${location._id}`);
     }
 
     return (

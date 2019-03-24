@@ -277,7 +277,40 @@
           "price": 12.49,
           "category": "Rusty Bucket Wings",
           "popular": true,
-          "showcase_order": 1
+          "showcase_order": 1,
+          "choices": [
+            {
+              "title": "Wings Sauce Choice",
+              "required": true,
+              "options": [
+                {
+                  "label": "BBQ (Mild)",
+                  "cost": 0.00
+                },
+                {
+                  "label": "Habanero (Extra Hot)",
+                  "cost": 0.00
+                },
+                {
+                  "label": "Joe's Regular (Medium)",
+                  "cost": 0.00
+                },
+                {
+                  "label": "Spicy Garlic (Hot)",
+                  "cost": 0.00
+                },
+                {
+                  "label": "Spicy Garlic (Medium)",
+                  "cost": 0.00
+                },
+                {
+                  "label": "Sweet Chilli (Medium)",
+                  "cost": 0.00
+                }
+              ]
+            }
+          ],
+          "suggestions": []
         },
         {
           "title": "Buffalo Chicken Sandwich",

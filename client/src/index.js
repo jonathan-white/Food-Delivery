@@ -84,10 +84,52 @@ const locations = (state = [], action) => {
   }
 }
 
+const product = (state = {}, action) => {
+  switch (action.type) {
+    case 'ADD_TO_CART':
+      return {
+        product: action.product,
+        qty: action.qty,
+        cost: action.product.price * action.qty
+      };
+    case 'UPDATE_QUANTITY':
+      if(state.product._id !== action.product._id) {
+        return state;
+      }
+      return {
+        ...state,
+        qty: action.qty,
+        cost: action.product.price * action.qty
+      };
+    default:
+      return state;
+  }
+};
+
+const order = (state = JSON.parse(localStorage.getItem('order')) || [], action) => {
+  switch(action.type) {
+    case 'ADD_TO_CART':
+      return [
+        ...state,
+        product(undefined, action)
+      ];
+    case 'UPDATE_QUANTITY':
+      return state.map(t => product(t, action));
+    case 'REMOVE_FROM_CART':
+      return [
+        ...state.slice(0, action.index),
+        ...state.slice(action.index + 1)
+      ];
+    default:
+      return state;
+  }
+};
+
 const FoodApp = combineReducers({
   login,
   display,
-  locations
+  locations,
+  order
 });
 
 ReactDOM.render(

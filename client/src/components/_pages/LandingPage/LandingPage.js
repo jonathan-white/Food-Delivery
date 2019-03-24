@@ -45,14 +45,18 @@ const LandingPage = () => {
         <Logo size="fa-4x" />
       </div>
       <div className="bottom-section">
-        <div className="btn-signin-google">
-          <i className="google-icon"></i>
-          Continue with Google
-        </div>
-        <div className="btn-signin-facebook">
-          <i className="facebook-icon"></i>
-          Continue with Facebook
-        </div>
+				<Link to={routes.FOOD}>
+					<div className="btn-signin-google">
+						<i className="google-icon"></i>
+						Continue with Google
+					</div>
+				</Link>
+				<Link to={routes.FOOD}>
+					<div className="btn-signin-facebook">
+						<i className="facebook-icon"></i>
+						Continue with Facebook
+					</div>
+				</Link>
         <div className="login-container">
           <div className="login-wrapper">
             <Link to={routes.LOGIN}>

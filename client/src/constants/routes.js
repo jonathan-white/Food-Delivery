@@ -6,4 +6,4 @@ export const LOGIN = '/login';
 export const SIGNUP = '/signup';
 export const LOCATION = '/locations/:id';
 export const MENU_CATEGORY = '/menu-categories/:id';
-export const MENU_ITEM = '/menu-item/:id';
+export const MENU_ITEM = '/menu-items/:id';
