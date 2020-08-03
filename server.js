@@ -32,7 +32,8 @@ app.use(routes);
 
 // If deployed, use the deployed database. Otherwise use the local database
 mongoose.Promise = Promise;
-mongoose.connect(process.env.DB_URI || "mongodb://localhost:27017/foodDeliveryDB",  { useNewUrlParser: true });
+mongoose.connect(process.env.DB_URI || "mongodb://localhost:27017/foodDeliveryDB", 
+  { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Connect to MongoDB &
 const db = mongoose.connection;
